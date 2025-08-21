@@ -140,10 +140,16 @@ export default function LandingPage() {
         >
           <div className="container flex h-16 items-center justify-between">
             <div className="flex items-center gap-2 font-bold">
-              <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
-                N
+              <div className="flex items-center gap-2 font-bold">
+                {/* The 'div' is replaced with the Image component */}
+                <Image
+                  src="images/logo.png" // <-- Path to your logo in the 'public' folder
+                  alt="Nexora Logo"
+                  width={32} // Corresponds to size-8 (8 * 0.25rem * 16px)
+                  height={32}
+                />
+                <span>Nexora</span>
               </div>
-              <span>Nexora</span>
             </div>
             <nav className="hidden md:flex gap-8">
               <Link
@@ -333,7 +339,7 @@ export default function LandingPage() {
               >
                 <div className="rounded-xl overflow-hidden shadow-2xl border border-border/40 bg-gradient-to-b from-background to-muted/20">
                   <Image
-                    src="https://cdn.dribbble.com/userupload/12302729/file/original-fa372845e394ee85bebe0389b9d86871.png?resize=1504x1128&vertical=center"
+                    src="https://cdn.dribbble.com/userupload/17299589/file/original-90113308e68068f41645b091189098fc.png?resize=1504x1128&vertical=center"
                     width={1280}
                     height={720}
                     alt="SaaSify dashboard"
@@ -773,78 +779,21 @@ export default function LandingPage() {
             <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
               <div className="space-y-4">
                 <div className="flex items-center gap-2 font-bold">
-                  <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
-                    N
+                  <div className="flex items-center gap-2 font-bold">
+                    {/* The 'div' is replaced with the Image component */}
+                    <Image
+                      src="images/logo.png" // <-- Path to your logo in the 'public' folder
+                      alt="Nexora Logo"
+                      width={32} // Corresponds to size-8 (8 * 0.25rem * 16px)
+                      height={32}
+                    />
+                    <span>Nexora</span>
                   </div>
-                  <span>Nexora</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
                   Otimize seu fluxo de trabalho com nossa plataforma.
                 </p>
-                <div className="flex gap-4">
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="size-5"
-                    >
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                    </svg>
-                    <span className="sr-only">Facebook</span>
-                  </Link>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="size-5"
-                    >
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                    </svg>
-                    <span className="sr-only">Twitter</span>
-                  </Link>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="size-5"
-                    >
-                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                      <rect width="4" height="12" x="2" y="9"></rect>
-                      <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    <span className="sr-only">LinkedIn</span>
-                  </Link>
-                </div>
+                <div className="flex gap-4"></div>
               </div>
               <div className="space-y-4">
                 <h4 className="text-sm font-bold">Nossos produtos</h4>
