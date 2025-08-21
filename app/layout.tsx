@@ -5,8 +5,6 @@ import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
-
-// 1. IMPORTE O BOTÃO AQUI
 import WhatsAppButton from "@/components/ui/whatsapp-button";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,10 +29,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-        </ThemeProvider>
 
-        {/* 2. ADICIONE O COMPONENTE DO BOTÃO AQUI */}
-        <WhatsAppButton />
+          {/* Botão flutuante do WhatsApp */}
+          <WhatsAppButton />
+        </ThemeProvider>
       </body>
     </html>
   );

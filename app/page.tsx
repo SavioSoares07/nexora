@@ -60,19 +60,19 @@ export default function LandingPage() {
 
   const teamMembers = [
     {
-      name: "Gabriel",
-      role: "CEO & Fundador",
-      image: "/images/team/membro-1.jpg", // <-- Troque pela sua imagem
+      name: "Gabriel Santos",
+      role: "CFO e CO-Fundador",
+      image: "/images/team/membro-1.jpg",
     },
     {
-      name: "Adolfo",
+      name: "Adolfo Batista",
       role: "CEO & Fundador",
-      image: "/images/team/membro-2.jpg", // <-- Troque pela sua imagem
+      image: "/images/team/membro-2.jpg",
     },
     {
-      name: "Darlan",
+      name: "Darllan saturnino",
       role: "Líder Comercial",
-      image: "/images/team/membro-3.jpg", // <-- Troque pela sua imagem
+      image: "/images/team/membro-3.jpg",
     },
   ];
 
@@ -285,8 +285,6 @@ export default function LandingPage() {
           )}
         </header>
         <main className="flex-1">
-          <WhatsAppButton />
-
           {/* Hero Section */}
           <section className="w-full py-20 md:py-32 lg:py-40 overflow-hidden">
             <div className="container px-4 md:px-6 relative">
@@ -362,11 +360,11 @@ export default function LandingPage() {
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Image
                       key={i}
-                      src={`/placeholder-logo.svg`}
+                      src={`/images/logo.png`}
                       alt={`Company logo ${i}`}
-                      width={120}
-                      height={60}
-                      className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                      width={1000}
+                      height={1000}
+                      className="h-12 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
                     />
                   ))}
                 </div>
@@ -682,15 +680,15 @@ export default function LandingPage() {
                 <Accordion type="single" collapsible className="w-full">
                   {[
                     {
-                      question: "O que a plataforma faz exatamente?",
+                      question: "O que oferecemos?",
                       answer:
-                        "Nossa plataforma combina automação, funis de marketing e inteligência artificial para otimizar campanhas, gerar leads qualificados e aumentar vendas de forma previsível. Quer saber mais? Fale conosco pelo WhatsApp!",
+                        "Nossa empresa combina automação, funis de marketing e inteligência artificial para otimizar campanhas, gerar leads qualificados e aumentar vendas de forma previsível. Quer saber mais? Fale conosco pelo WhatsApp!",
                     },
                     {
                       question:
                         "Preciso ter experiência em marketing digital para usar?",
                       answer:
-                        "Não! Nossos recursos são intuitivos e acessíveis para todos os níveis. Para saber como começar rapidamente, entre em contato pelo WhatsApp.",
+                        "Não! Nossos recursos são intuitivos e acessíveis para todos os níveis. Para começar, é só entrar em contato conosco pelo WhatsApp que nossa equipe faz toda a configuração para você.",
                     },
                     {
                       question: "Quais tipos de campanhas posso automatizar?",
@@ -845,6 +843,13 @@ export default function LandingPage() {
             </div>
           </div>
         </footer>
+        <div
+          className="fixed bottom-6 right-6 z-[9999] 
+                 bg-green-600 text-white p-4 rounded-full shadow-lg 
+                 hover:bg-green-700 transition-colors"
+        >
+          <WhatsAppButton />
+        </div>
       </div>
     </>
   );
