@@ -92,3 +92,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer base {
+  @keyframes wave-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        -160px
+      ); /* O valor -160px corresponde à largura de uma "repetição" da onda no nosso SVG path */
+    }
+  }
+}
